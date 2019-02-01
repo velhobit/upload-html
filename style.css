@@ -1,0 +1,113 @@
+body{
+	margin: 0;
+	font-family: sans-serif;
+	text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+.area-upload{
+	box-shadow: 0 5px 20px rgba(0,0,0,.2);
+	margin: 20px auto;
+	padding: 20px;
+	box-sizing: border-box;
+	
+	width: 100%;
+	max-width: 700px;
+	position: relative;
+}
+
+.area-upload label.label-upload{
+	border: 2px dashed #0d8acd;
+	min-height: 200px;
+	text-align: center;
+	width: 100%;
+	
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	color: #0d8acd;
+	position: relative;
+	
+	-webkit-transition: .3s all;
+	-moz-transition: .3s all;
+	-o-transition: .3s all;
+	transition: .3s all;
+}
+
+.area-upload label.label-upload.highlight{
+	background-color: #fffdaa;
+}
+
+.area-upload label.label-upload *{
+	pointer-events: none;
+}
+
+.area-upload input{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	-webkit-appearance: none;
+	opacity: 0;
+}
+
+.area-upload .lista-uploads{
+	
+}
+
+.area-upload .lista-uploads .barra{
+	background-color: #e6e6e6;
+	margin: 10px 0;
+	width: 100%;
+	position: relative;
+}
+
+.area-upload .lista-uploads .barra .fill{
+	background-color: #a1f7ff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	min-width: 0;
+	
+	-webkit-transition: .2s all;
+	-moz-transition: .2s all;
+	-o-transition: .2s all;
+	transition: .2s all;
+}
+
+.area-upload .lista-uploads .barra.complete .fill{
+	background-color: #bcffdf;
+}
+
+.area-upload .lista-uploads .barra .text{
+	z-index: 10;
+	text-align: center;
+	padding: 3px 5px;
+	box-sizing: border-box;
+	position: relative;
+	width: 100%;
+	color: black;
+	font-size: 12px;
+}
+.area-upload .lista-uploads .barra .text a{
+	color: black;
+	font-weight: bold;
+}
+
+.area-upload .lista-uploads .barra.error .fill{	
+	background-color: #c02929;
+	color: white;
+	min-width: 100%;
+}
+
+.area-upload .lista-uploads .barra.error .text{
+	color: white;
+}
+
+
+
+
+
